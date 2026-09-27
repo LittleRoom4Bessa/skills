@@ -27,6 +27,6 @@ Procedure:
 
 1. Archive the branch: tag it, don't delete it.
 2. Record the **cause of death** on the experiment card — required, never empty. One honest line: "feel too floaty", "conflicts with stealth", "fun doesn't carry the complexity".
-3. Move the card to `experiments/graveyard/`, set `status: graveyard`.
+3. Move the card to `experiments/graveyard/`, set `status: graveyard`. Do the graveyard bookkeeping where cards live — on main or a branch headed there, never stranded on the exp branch.
 4. Return to the source thought card: link the graveyard entry and its cause. The *idea* is not dead — this *attempt* is. The thought goes back to the pool carrying its epitaph, richer than before.
 5. Tell the user in one line. No ceremony — killing an experiment cheaply is the system working as designed.

@@ -31,6 +31,8 @@ pause_count: 0
 ## Outcome            # filled by the landing skill
 ```
 
+Cards are project data, not code — commit them freely wherever you are (the exp branch is fine; landing or graveyard carries them to main).
+
 5. Create branch `exp/<slug>`.
 
 ## Rules (non-negotiable)
