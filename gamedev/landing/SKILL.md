@@ -20,8 +20,9 @@ Procedure:
 3. **Rewrite** the soul into main's architecture: config instead of hardcoding, project event system, naming conventions, edge cases.
 4. **Regression check:** framerate, conflicts with existing systems, unhappy paths the prototype never handled.
 5. **Review close-out.** Before the PR, review the diff on two axes: *standards* (project conventions in AGENTS.md — GDScript-first, minimal, no speculative abstraction) and *fidelity* (every entry in the do-not-change list preserved verbatim; nothing from the verdict packet silently dropped). Fix all findings before the next step.
-6. **Feel acceptance (HUMAN GATE).** The user plays the clean build against the baseline GIF: "Is the taste still there?" If not, return to step 3. Never self-certify feel — you can verify code correctness, not taste.
-7. Open the PR referencing the exp branch. Set the card `status: merged` and record the PR under Outcome. Also update the source thought card (`from:`): set `status: landed` — the idea has shipped.
+6. **Code review (fresh eyes).** The rewrite is production code; self-review has author blind spots. Have the diff reviewed by someone who didn't write it — an independent reviewer (subagent/forked context) when available, otherwise a deliberate second pass with this checklist: correctness bugs (not style), edge cases the playtest never hit, freed-node/async traps (timers, awaits, signals on objects that can die), and error paths. Verify every finding against the code; fix before the feel gate so the human plays the final build.
+7. **Feel acceptance (HUMAN GATE).** The user plays the clean build against the baseline GIF: "Is the taste still there?" If not, return to step 3. Never self-certify feel — you can verify code correctness, not taste.
+8. Open the PR referencing the exp branch. Set the card `status: merged` and record the PR under Outcome. Also update the source thought card (`from:`): set `status: landed` — the idea has shipped.
 
 ## Graveyard flow (verdict: kill)
 
