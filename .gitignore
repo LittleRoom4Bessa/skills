@@ -1,4 +1,7 @@
-.DS_Store
-find-skills/
-frontend-design/
-notion-cli/
+# Allowlist: only the folders below are tracked.
+# Everything else in this directory is a third-party installed skill.
+*
+!.gitignore
+!README.md
+!gamedev/
+!gamedev/**
