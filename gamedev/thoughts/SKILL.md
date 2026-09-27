@@ -19,7 +19,7 @@ A holding pool where raw game ideas live until they are ripe enough to prototype
 ```markdown
 ---
 id: T-012
-status: seed | sprouting | ripe
+status: seed | sprouting | ripe | landed
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 links: [T-007, EXP-003]   # related cards, optional
@@ -42,6 +42,7 @@ If <change>, then <expected player experience>. Verify by <observable check>.
 - **seed** — raw sentence only. May stay here forever; that is not failure.
 - **sprouting** — has connections (related systems/cards), blockers, or notes.
 - **ripe** — has both Hypothesis and Slice filled. Only ripe cards may enter the prototype skill.
+- **landed** — the idea shipped, via prototype → landing. Terminal state; the card stays as history. (A killed experiment does **not** land the idea — it returns to the pool at its previous rung, epitaph linked.)
 
 ## Entry points
 

@@ -21,7 +21,7 @@ Procedure:
 4. **Regression check:** framerate, conflicts with existing systems, unhappy paths the prototype never handled.
 5. **Review close-out.** Before the PR, review the diff on two axes: *standards* (project conventions in AGENTS.md — GDScript-first, minimal, no speculative abstraction) and *fidelity* (every entry in the do-not-change list preserved verbatim; nothing from the verdict packet silently dropped). Fix all findings before the next step.
 6. **Feel acceptance (HUMAN GATE).** The user plays the clean build against the baseline GIF: "Is the taste still there?" If not, return to step 3. Never self-certify feel — you can verify code correctness, not taste.
-7. Open the PR referencing the exp branch. Set the card `status: merged` and record the PR under Outcome.
+7. Open the PR referencing the exp branch. Set the card `status: merged` and record the PR under Outcome. Also update the source thought card (`from:`): set `status: landed` — the idea has shipped.
 
 ## Graveyard flow (verdict: kill)
 
